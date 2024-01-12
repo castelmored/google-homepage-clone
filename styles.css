@@ -39,6 +39,12 @@ nav, section{
     gap: 14px;
 }
 
+header section img {
+    max-width: 40px;
+    border-radius: 50%;
+    border: 2px solid cyan;
+}
+
 /*(.) is used to style a class*/
 .whiteLink{
     color: white;
@@ -106,6 +112,7 @@ main{
     border: none;
     color: white;
     font-size: 1.2em;
+    cursor: pointer;
 }
 
 input {
@@ -166,4 +173,10 @@ footer > section:last-child { /*To select direct children*/
 
 .footerLink a {
     cursor: pointer;
+}
+
+@media (min-width: 540px) {
+    footer > section:last-child{
+        flex-direction: row;
+    }
 }
